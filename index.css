@@ -1,0 +1,49 @@
+#clockcontainer{
+border: 2px solid black;
+margin: auto;
+background-color: brown;
+background: url(clock_2.png) no-repeat;
+height: 40vw;
+width: 40vw;
+background-size: 100%;
+/* be sure to write vh in height and vw in width or else */
+/* the div won't be responsive in either dimension. */
+/* best to use vw. So avoid using vh. */
+}
+
+#hour, #minute, #second{
+    transform-origin: bottom;
+    position: relative;     
+    background: black;
+    border-radius: 10px;
+}
+
+#hour{
+    background-color: rgb(83, 12, 12);
+    z-index: 10;
+    width: 2.5%;
+    height: 26%;
+    top: 26%;
+    left:48%;
+    /* display: none; */
+}
+#minute{
+    z-index: 5;
+    width: 2%;
+    height: 31.5%;
+    top: -6%;
+    left:48%;
+    opacity: 0.9;
+    /* display: none; */
+    
+}
+#second{
+    background-color: red;
+    z-index: 0;
+    width: 1%;
+    height: 37%;
+    top: -42.5%;
+    left:48.75%;
+    opacity: 0.8;
+   /* display: none;  */
+}
